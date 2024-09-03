@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    generate-ddl: false
+    properties:
+      hibernate:
+        use_sql_comments: true
+        format_sql: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    open-in-view: false
+  application:
+    name: SpringSecurity
+  profiles:
+    active: prod
+  datasource:
+    password:
+    driver-class-name: org.mariadb.jdbc.Driver
+    username:
+    url: 
+server:
+  port: 11000
